@@ -1,0 +1,21 @@
+﻿<Page x:Class="ElectrotehnikaMagazin.Pages.Administrator"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ElectrotehnikaMagazin.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800" Background="LightBlue" 
+      Title="Administrator">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="Пункт Администратора" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Center"/>
+        <Button Content="Список сотрудников" HorizontalAlignment="Left" Margin="53,155,0,0" Grid.Row="1" VerticalAlignment="Top" Height="60" Width="140" Click="btnSotrudniki_Click"/>
+        <Button Content="Список товаров" HorizontalAlignment="Center" Margin="0,155,0,0" Grid.Row="1" VerticalAlignment="Top" Height="60" Width="140" Click="btnTovary_Click"/>
+        <Button Content="Список клиентов" HorizontalAlignment="Left" Margin="621,155,0,0" Grid.Row="1" VerticalAlignment="Top" Height="60" Width="140" Click="btnKlienty_Click"/>
+    </Grid>
+</Page>
